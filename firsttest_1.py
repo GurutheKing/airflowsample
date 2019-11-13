@@ -1,7 +1,7 @@
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from datetime import datetime, timedelta
-# default arguments
+# default arguments contains the owner info, email details etc...
 default_args = {
     'owner':'guru',
     'depends_on_past': False,
